@@ -1,16 +1,20 @@
 function validateForm(event) {
+
+
   var usern = document.getElementById("user");
   var passw = document.getElementById("pass");
 
   var potat = document.getElementById("item1");
   var tomat = document.getElementById("item2");
-  var pengu = document.getElementById("penguin");
+  var pengu = document.getElementById("item3");
 
 
-  var shipping = document.getElementByName("ship");
+  // var shipping = document.getElementByName("ship");
   var ships = document.querySelector('input[name = "ship"]:checked');
 
   var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  // alert("Hello");
 
   if (usern.value.length == 0 || !usern.value.match(re)) {
     event.preventDefault();
@@ -30,7 +34,7 @@ function validateForm(event) {
     return false;
   }
 
-  if (potat.valueAsNumber < 0 || tomat.valueAsNumber < 0 || pengu.valueAsNumber < 0) {
+  if (potat.value < 0 || tomat.value < 0 || pengu.value < 0) {
     event.preventDefault();
     alert("You cannot buy negative quantities");
     return false;

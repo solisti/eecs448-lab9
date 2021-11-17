@@ -1,9 +1,12 @@
+<style><?php include 'style.css'; ?></style>
 <?php
 
   // header("Content-type: text/css");
 
   error_reporting(E_ALL);
   ini_set("display_errors", 1);
+
+  // include 'style.css';
 
   $username = $_POST["Username"];
   $password = $_POST["Password"];
@@ -30,6 +33,8 @@
 
   echo "Here is your receipt: ";
 
+  echo "<div class = 'receipt'>";
+
   echo "<table border=\"1\">";
 
   echo "<tr>";
@@ -40,21 +45,21 @@
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Item 1</b></td>";
+    echo "<td><b>Potato</b></td>";
     echo "<td>" . $potato . "</td>";
     echo "<td>$425.00</td>";
     echo "<td>$" . $potato * 425 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Item 2</b></td>";
+    echo "<td><b>Tomato</b></td>";
     echo "<td>" . $tomato . "</td>";
     echo "<td>$128.00</td>";
     echo "<td>$" . $tomato * 128 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Item 3</b></td>";
+    echo "<td><b>Penguin</b></td>";
     echo "<td>" . $penguin . "</td>";
     echo "<td>$399.00</td>";
     echo "<td>$" . $penguin * 399 . "</td>";
@@ -74,5 +79,7 @@
   echo "</tr>";
 
   echo "</table>";
+
+  echo "</div>";
 
  ?>
