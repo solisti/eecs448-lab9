@@ -10,9 +10,9 @@ table {
   align-self: center;
 }
 
-/* th {
-  background-color: palegreen;
-} */
+th {
+  background-color: #99cc55;
+}
 
 tr {
   background-color: #ffddaa;

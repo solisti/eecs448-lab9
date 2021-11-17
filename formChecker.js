@@ -1,6 +1,4 @@
 function validateForm(event) {
-
-
   var usern = document.getElementById("user");
   var passw = document.getElementById("pass");
 
@@ -8,13 +6,10 @@ function validateForm(event) {
   var tomat = document.getElementById("item2");
   var pengu = document.getElementById("item3");
 
-
-  // var shipping = document.getElementByName("ship");
   var ships = document.querySelector('input[name = "ship"]:checked');
 
   var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  // alert("Hello");
 
   if (usern.value.length == 0 || !usern.value.match(re)) {
     event.preventDefault();
@@ -49,8 +44,3 @@ function validateForm(event) {
   return true;
 
 }
-
-// function validateUsername(usern) {
-//   var re = /\S+@\S+\.\S+/;
-//   return re.test(usern);
-// }

@@ -1,12 +1,8 @@
 <style><?php include 'style.css'; ?></style>
 <?php
 
-  // header("Content-type: text/css");
-
   error_reporting(E_ALL);
   ini_set("display_errors", 1);
-
-  // include 'style.css';
 
   $username = $_POST["Username"];
   $password = $_POST["Password"];
@@ -45,28 +41,28 @@
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Potato</b></td>";
+    echo "<th><b>Potato</b></th>";
     echo "<td>" . $potato . "</td>";
     echo "<td>$425.00</td>";
-    echo "<td>$" . $potato * 425 . "</td>";
+    echo "<td>$" . $potato * 425 . "</th>";
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Tomato</b></td>";
+    echo "<th><b>Tomato</b></th>";
     echo "<td>" . $tomato . "</td>";
     echo "<td>$128.00</td>";
     echo "<td>$" . $tomato * 128 . "</td>";
   echo "</tr>";
 
   echo "<tr>";
-    echo "<td><b>Penguin</b></td>";
+    echo "<th><b>Penguin</b></th>";
     echo "<td>" . $penguin . "</td>";
     echo "<td>$399.00</td>";
     echo "<td>$" . $penguin * 399 . "</td>";
   echo "</tr>";
 
   echo '<tr>';
-      echo '<td>Shipping</td>';
+      echo '<th>Shipping</th>';
       echo '<td colspan="2">'.$ship_option.'</td>';
       echo '<td>$'.$shipping.'</td>';
   echo '</tr>';
