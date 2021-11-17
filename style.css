@@ -1,0 +1,21 @@
+body {
+  background-image: url(https://i.imgur.com/8XsyL2m.jpg); background-repeat: no-repeat;
+  background-size: auto; background-attachment: fixed;
+}
+
+.center {
+  text-align: center;
+}
+
+table {
+  empty-cells: show;
+}
+
+th {
+  background-color: #66ccff;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
