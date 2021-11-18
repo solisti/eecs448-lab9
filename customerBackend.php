@@ -70,7 +70,7 @@
   $total = $shipping + $potato * 425 + $tomato * 128 + $penguin * 399 ;
 
   echo "<tr>";
-    echo "<td colspan='3'><b> Total Cost</b></td>";
+    echo "<th colspan='3'><b> Total Cost</b></th>";
     echo "<td>$" . $total . "</td>";
   echo "</tr>";
 
